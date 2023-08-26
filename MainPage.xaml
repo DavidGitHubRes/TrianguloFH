@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TrianguloFH.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="Ingrese lado A del triangulo"
+                   HorizontalOptions="Center"
+                   x:Name="lblA"
+                   Margin="0,30,0,0"
+                   FontSize="Medium"></Label>
+
+            <Entry BackgroundColor="White"
+                   Keyboard="Numeric"
+                   Placeholder="lado A"
+                   Margin="30,10,30,0"
+                   x:Name="EnA"
+                   TextColor="Black">
+
+            </Entry>
+            <Label Text="Ingrese lado B del triangulo"
+                   HorizontalOptions="Center"
+                   Margin="0,30,0,0"
+                   FontSize="Medium"
+                   x:Name="lblB"></Label>
+
+            <Entry BackgroundColor="White"
+                   Keyboard="Numeric"
+                   Placeholder="lado B"
+                   Margin="30,10,30,0"
+                   x:Name="EnB"
+                   TextColor="Black">
+
+            </Entry>
+
+            <Label Text="Ingrese lado C del triangulo"
+                   HorizontalOptions="Center"
+                   Margin="0,30,0,0"
+                   FontSize="Medium"
+                   x:Name="lblC"></Label>
+
+            <Entry BackgroundColor="White"
+                   Keyboard="Numeric"
+                   Placeholder="lado C"
+                   x:Name="EnC"
+                   Margin="30,10,30,0"
+                   TextColor="Black">
+
+            </Entry>
+
+            <Label Text="Superficie del triangulo: "
+                   Margin="0,30,0,0"
+                   FontSize="Medium"
+                   x:Name="lblS"></Label>
+
+            <Button CornerRadius="20"
+                    HeightRequest="70"
+                    Text="Calcular"
+                    BackgroundColor="Green"
+                    TextColor="White"
+                    x:Name="CalBtn"
+                    Clicked="CalBtn_Clicked"></Button>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
